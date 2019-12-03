@@ -1,0 +1,39 @@
+{
+    "id": "Extension-id-dev",
+    "name": "Extension Name DEV",
+    "description": "DEVELOPMENT Only",
+    "baseUri": "https://localhost:9003",
+    "contributions": [
+        {
+            "id": "Contribution id",
+            "type": "ms.vss-web.hub",
+            "targets": [
+                "ms.vss-work-web.work-hub-group"
+            ],
+            "properties": {
+                "name": "Extension title",
+                "uri": "index.html"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "index.html",
+            "addressable": true
+        },
+        {
+            "path": "img",
+            "addressable": true
+        },
+        {
+            "path": "dist/dev/deploy/dist",
+            "packagePath": "dist",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib",
+            "addressable": true,
+            "packagePath": "lib"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "firefox",
+            "request": "attach",
+            "name": "Firefox launch",
+            "webRoot": "https://localhost:9003",
+            "url": "https://{instance}/{team-project}/_apps/hub/{plugin}",
+            "pathMappings": [
+                {
+                    "url": "https://localhost:9003/",
+                    "path": "${workspaceFolder}\\dist\\dev\\deploy/"
+                },
+                {
+                    "url": "webpack:///src/",
+                    "path": "${workspaceFolder}\\src/"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <script src="lib/VSS.SDK.min.js"></script>
+        <script type="text/javascript">
+            window.__vssNoSandboxShim = true;
+            VSS.init({
+                explicitNotifyLoaded: true,
+                usePlatfromScripts: true,
+                usePlatfromStyles: false
+            });
+            VSS.require("dist/main", function () {
+                VSS.loadNotifySucceed();
+            })
+        </script>
+    </head>
+
+    <body>
+        <div id="root"></div>
+    </body>
+
+</html>

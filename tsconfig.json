@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "target": "es3",
+        "rootDir": "src/",
+        "outDir": "dist/",
+        "jsx": "react",
+        "types": [
+            "vss-web-extension-sdk"
+        ]
+    }
+}
